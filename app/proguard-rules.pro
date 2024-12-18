@@ -12,6 +12,27 @@
 #   public *;
 #}
 
+# الحفاظ على النشاطات (Activities)
+-keep class * extends android.app.Activity { *; }
+
+# الحفاظ على الأجزاء (Fragments)
+-keep class * extends android.app.Fragment { *; }
+
+# منع تقليص واجهات البرمجة (APIs) العامة
+-keep public class com.smartly.newapp.** { public *; }
+
+# الحفاظ على مكتبة Gson
+-keep class com.google.gson.** { *; }
+
+# الحفاظ على مكتبة Retrofit
+-keep class retrofit2.** { *; }
+
+# السماح لجميع الإضافات الخاصة بالكلاس بالبقاء
+-keepattributes InnerClasses
+
+# تجاهل التحذيرات
+-dontwarn android.support.v4.**
+
 # Uncomment this to preserve the line number information for
 # debugging stack traces.
 #-keepattributes SourceFile,LineNumberTable
