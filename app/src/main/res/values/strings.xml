@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">smartly</string>
+    <string name="headlines">HeadLines</string>
+    <string name="search">search</string>
+    <string name="favourites">Favourites</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favourites_ui">Favourites</string>
+    <string name="headlines_ui">Headlines</string>
+    <string name="search_ui">Search</string>
+    <string name="retry">Retry</string>
+    <string name="no_internet">No internet</string>
+
+</resources>
