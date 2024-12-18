@@ -4,6 +4,7 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -55,8 +56,13 @@ class SplashFragment : Fragment() {
     private fun startApp() {
         Handler(Looper.getMainLooper()).postDelayed({
 
-            findNavController().navigate(R.id.action_splashFragment_to_headlinesFragment)
+            if (isAdded){
+            findNavController().navigate(R.id.action_splashFragment_to_headlinesFragment)}
+            else{
+                Log.e("SplashFragment", "Fragment is not attached to the FragmentManager!")
+            }
         }, 4000)
+
 
     }
 

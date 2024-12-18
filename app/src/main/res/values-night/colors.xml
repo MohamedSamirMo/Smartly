@@ -11,9 +11,7 @@
     <color name="lightPurple">#8652E1</color>
     <color name="dark_purple">#BB86FC</color>
     <color name="dark_purple_variant">#3700B3</color>
-        <color name="background_color">#FFFFFF</color> <!-- أبيض للوضع العادي -->
-        <color name="text_color">#000000</color> <!-- أسود للوضع العادي -->
-
-
+    <color name="background_color">#000000</color> <!-- أسود للوضع الداكن -->
+    <color name="text_color">#FFFFFF</color> <!-- أبيض للوضع الداكن -->
 
 </resources>
